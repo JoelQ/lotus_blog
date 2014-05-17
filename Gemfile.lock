@@ -4,11 +4,16 @@ GEM
     lotus-controller (0.1.0)
       lotus-utils (~> 0.1)
       rack (~> 1.5)
+    lotus-model (0.1.0)
+      lotus-utils (~> 0.1, > 0.1.0)
+      sequel (~> 4.9)
     lotus-utils (0.1.1)
     lotus-view (0.1.0)
       lotus-utils (~> 0.1)
       tilt (~> 2.0, >= 2.0.1)
+    pg (0.15.1)
     rack (1.5.2)
+    sequel (4.10.0)
     tilt (2.0.1)
 
 PLATFORMS
@@ -16,4 +21,6 @@ PLATFORMS
 
 DEPENDENCIES
   lotus-controller
+  lotus-model
   lotus-view
+  pg
