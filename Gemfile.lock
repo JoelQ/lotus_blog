@@ -1,12 +1,18 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    http_router (0.11.1)
+      rack (>= 1.0.0)
+      url_mount (~> 0.2.1)
     lotus-controller (0.1.0)
       lotus-utils (~> 0.1)
       rack (~> 1.5)
     lotus-model (0.1.0)
       lotus-utils (~> 0.1, > 0.1.0)
       sequel (~> 4.9)
+    lotus-router (0.1.0)
+      http_router (~> 0)
+      lotus-utils (~> 0)
     lotus-utils (0.1.1)
     lotus-view (0.1.0)
       lotus-utils (~> 0.1)
@@ -15,6 +21,8 @@ GEM
     rack (1.5.2)
     sequel (4.10.0)
     tilt (2.0.1)
+    url_mount (0.2.1)
+      rack
 
 PLATFORMS
   ruby
@@ -22,5 +30,6 @@ PLATFORMS
 DEPENDENCIES
   lotus-controller
   lotus-model
+  lotus-router
   lotus-view
   pg

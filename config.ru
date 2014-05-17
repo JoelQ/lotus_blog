@@ -6,6 +6,8 @@ require 'lotus/view'
 
 require 'lotus/controller'
 
+require 'lotus/router'
+
 class Post
   include Lotus::Entity
 
@@ -48,4 +50,8 @@ class Index
   end
 end
 
-run Index.new
+app = Lotus::Router.new do
+  get '/', to: Index.new
+end
+
+run app
