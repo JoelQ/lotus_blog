@@ -1,0 +1,14 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    lotus-controller (0.1.0)
+      lotus-utils (~> 0.1)
+      rack (~> 1.5)
+    lotus-utils (0.1.1)
+    rack (1.5.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  lotus-controller
